@@ -14,7 +14,7 @@ Custom:
 + frame width, height, rate
 + crop event
 
-### Hot to Use
+### How to Use
 
 + `import {Cropper} from 'react-image-cropper'`
 
@@ -39,6 +39,7 @@ Custom:
 | prop  |  value   |
 |:-------:|:--------|
 | rate | width / height |
+| disabled | boolean |
 | width | cropper frame width |
 | height | cropper frame height |
 | originX | cropper original position(x axis)|
@@ -48,7 +49,9 @@ Custom:
 | allowNewSelection | allow user to create a new selection instead of reusing initial selection (bool default true) |
 | styles | specify styles to override inline styles |
 | imageLoaded | specify fuction callback to run when the image completed loading |
-| beforeImageLoaded | specify function callback to run when the image size value is ready but image is not completed loading |
+| beforeImageLoaded | specify function callback to run when the image size value is ready but the image has not completed loading |
+| imageLoadError | specify function callback to run when the image errors during loading |
+| onDragStop | specify function callback to run when dragging the crop has ended |
 
 
 **[See the demo](http://braavos.me/react-image-cropper/)**
